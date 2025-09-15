@@ -1,4 +1,5 @@
-import { Star, MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
+import logoImage from "@/assets/divulgamais-logo.png";
 
 export const Footer = () => {
   return (
@@ -8,10 +9,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-xl gradient-brand flex items-center justify-center">
-                <Star className="w-6 h-6 text-white fill-white" />
-              </div>
+            <div className="flex items-center gap-3 mb-6">
+              <img 
+                src={logoImage} 
+                alt="DivulgaMais Logo"
+                className="w-10 h-10 object-contain filter brightness-0 invert"
+              />
               <span className="text-2xl font-bold">DivulgaMais</span>
             </div>
             

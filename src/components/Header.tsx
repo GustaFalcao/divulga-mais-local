@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Search, Menu, Star } from "lucide-react";
+import { Search, Menu } from "lucide-react";
+import logoImage from "@/assets/divulgamais-logo.png";
 
 export const Header = () => {
   return (
@@ -7,10 +8,12 @@ export const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl gradient-brand flex items-center justify-center">
-              <Star className="w-6 h-6 text-white fill-white" />
-            </div>
+          <div className="flex items-center gap-3">
+            <img 
+              src={logoImage} 
+              alt="DivulgaMais Logo"
+              className="w-10 h-10 object-contain"
+            />
             <span className="text-2xl font-bold text-brand-navy">DivulgaMais</span>
           </div>
           
